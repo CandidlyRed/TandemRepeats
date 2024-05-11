@@ -19,6 +19,7 @@ Our work builds on previous work from the following papers:
   Some analysis was performed with R. To use, install R Studio and input our files and install all required dependencies. 
     
     Files are as follows:
+    qc_and_liftover folder: code for cleaning downloaded TR data into a format that can be used by the RExPRT pipeline (/qc_and_liftover/clean_data.R). After doing liftover using the UCSC genome browser (https://genome.ucsc.edu/cgi-bin/hgLiftOver), there is additional code to (1) clean output from the UCSC genome browser (/qc_and_liftover/clean_liftover_errors.py) and (2) map hg38 coordinates to the new hg19 coordinates (/qc_and_liftover/merge_liftover.R).
     01_clean_data.R : R file that cleans null values and other inconsistencies in data
     RExPRT_scores_analysis.R : R file that utilizes Fazal's work to generate RExPRT scores for each row in data
     
