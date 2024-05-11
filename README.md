@@ -14,12 +14,22 @@ Our work builds on previous work from the following papers:
 
 ## Usage
 
-    Most code and processing was done on Google Colab, to use those files, import all the directories into google drive and run accordingly
+  Most code and processing was done on Google Colab, to use those files, import all the directories into google drive and run accordingly
 
-    Some analysis was performed with R. To use, install R Studio and input our files and install all required dependencies. 
+  Some analysis was performed with R. To use, install R Studio and input our files and install all required dependencies. 
+    
+    Files are as follows:
+    01_clean_data.R : R file that cleans null values and other inconsistencies in data
+    RExPRT_scores_analysis.R : R file that utilizes Fazal's work to generate RExPRT scores for each row in data
+    
+    model.ipynb : Model training across 4 different algorithm models
+    model_training_V2.ipynb : Parameter testing across different models
+    training_NN.ipynb : Optimized parameter training for neural net
+    validation_NN.ipynb : running trained model against Mitra's dataset
+    LOOC_NN.ipynb : neural net training for leave-on-out-chromosome novel tandem repeat discovery
     
 ## Contributors
 
-    Tim Gruenloh - gruenloh@wisc.edu
-    Stephen Dorn - svdorn@wisc.edu
-    Leo Cui - lzcui@wisc.edu
+  Tim Gruenloh - gruenloh@wisc.edu
+  Stephen Dorn - svdorn@wisc.edu
+  Leo Cui - lzcui@wisc.edu
